@@ -1,18 +1,20 @@
 package com.example;
 
-public class DetalleOrden {
+import java.util.Date;
+
+class OrdenCompra {
     private Date fecha;
     private String estado;
 
-    public DetalleOrden(Date fecha, String estado) {
+    public OrdenCompra(Date fecha, String estado) {
         this.fecha = fecha;
         this.estado = estado;
     }
 
-    public DetalleOrden(Date fecha, String estado) {
-        this.fecha = fecha;
-        this.estado = estado;
-    }
+    // public DetalleOrden(Date fecha, String estado) {
+    //     this.fecha = fecha;
+    //     this.estado = estado;
+    // }
 
     public Date getFecha() {
         return fecha;
