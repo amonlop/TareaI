@@ -1,17 +1,22 @@
-package com.example;
+import java.util.ArrayList;
 
 class Articulo {
     private float peso;
     private String nombre;
     private String descripcion;
     private float precio;
-
-    public Articulo() {
-
+    private ArrayList<DetalleOrden> DetalleOrden;
+    public Articulo(float peso, String nombre, String descripcion, float precio) {
+        this.peso = peso;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precio = precio;
     }
-
     public void setPeso(float peso) {
         this.peso = peso;
+    }
+    public String tostring(){
+        return "articulo: "+this.nombre +", precio: "+this.precio;
     }
 
     public float getPeso() {
@@ -41,5 +46,5 @@ class Articulo {
     public String getNombre() {
         return nombre;
     }
-    
+
 }
