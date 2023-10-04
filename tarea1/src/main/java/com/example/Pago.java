@@ -3,11 +3,13 @@ package com.example;
 import java.util.Date;
 
 class Pago {
+    private OrdenCompra ordenCompra;
     private float monto;
     private Date fecha;
 
-    public Pago() {
-
+    public Pago(float monto, Date fecha) {
+        this.monto = monto;
+        this.fecha = fecha;
     }
     
     public float getMonto() {

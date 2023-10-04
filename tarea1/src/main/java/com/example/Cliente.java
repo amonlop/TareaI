@@ -1,7 +1,11 @@
 package com.example;
-public class Cliente {
+
+import java.util.ArrayList;
+
+class Cliente {
     private String rut;
     private String nombre;
+    private ArrayList<OrdenCompra> ordenesCompra;
 
     public Cliente(String rut, String nombre) {
         this.rut = rut;

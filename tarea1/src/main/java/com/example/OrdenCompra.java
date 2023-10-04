@@ -1,8 +1,11 @@
 package com.example;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 class OrdenCompra {
+    private ArrayList<Pago> pagos;
+    private Cliente cliente;
     private Date fecha;
     private String estado;
 
@@ -10,11 +13,6 @@ class OrdenCompra {
         this.fecha = fecha;
         this.estado = estado;
     }
-
-    // public DetalleOrden(Date fecha, String estado) {
-    //     this.fecha = fecha;
-    //     this.estado = estado;
-    // }
 
     public Date getFecha() {
         return fecha;

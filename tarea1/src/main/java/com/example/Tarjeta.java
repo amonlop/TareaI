@@ -1,11 +1,13 @@
 package com.example;
 
+import java.util.Date;
+
 class Tarjeta extends Pago {
     private String tipo;
     private String numTransaccion;
 
-    public Tarjeta() {
-
+    public Tarjeta(float monto, Date fecha) {
+        super(monto, fecha);
     }
 
     public String getTipo() {

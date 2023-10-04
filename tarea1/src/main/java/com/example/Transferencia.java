@@ -1,11 +1,13 @@
 package com.example;
 
+import java.util.Date;
+
 class Transferencia extends Pago {
     private String banco;
     private String numCuenta;
 
-    public Transferencia() {
-
+    public Transferencia(float monto, Date fecha) {
+        super(monto, fecha);
     }
 
     public String getBanco() {
