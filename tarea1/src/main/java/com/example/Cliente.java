@@ -1,4 +1,4 @@
-package.com.example
+package com.example;
 public class Cliente {
     private String rut;
     private String nombre;
