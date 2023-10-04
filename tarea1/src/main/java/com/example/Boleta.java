@@ -1,7 +1,11 @@
 package com.example;
 
+import java.util.Date;
+
 class Boleta extends DocTributario {
-    public Boleta() {
-        
+
+    public Boleta(String numero, String rut, Date fecha) {
+        super(numero, rut, fecha);
     }
+    
 }

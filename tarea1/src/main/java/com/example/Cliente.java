@@ -5,6 +5,7 @@ import java.util.ArrayList;
 class Cliente {
     private String rut;
     private String nombre;
+    private Direccion direccion;
     private ArrayList<OrdenCompra> ordenesCompra;
 
     public Cliente(String rut, String nombre) {

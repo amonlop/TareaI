@@ -6,9 +6,12 @@ class DocTributario {
     private String numero;
     private String rut;
     private Date fecha;
+    private Direccion direccion;
 
-    public DocTributario() {
-
+    public DocTributario(String numero, String rut, Date fecha) {
+        this.numero = numero;
+        this.rut = rut;
+        this.fecha = fecha;
     }
 
     public String getNumero() {

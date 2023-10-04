@@ -1,7 +1,12 @@
 package com.example;
 
+import java.util.ArrayList;
+
 class Direccion {
     private String Direccion;
+    private ArrayList<Cliente> clientes;
+    private ArrayList<DocTributario> docTributarios;
+
     public Direccion (String A){
         Direccion=A;
     }
