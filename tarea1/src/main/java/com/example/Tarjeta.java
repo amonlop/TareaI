@@ -1,4 +1,4 @@
-package main.java.com.example;
+package com.example;
 
 class Tarjeta extends Pago {
     private String tipo;

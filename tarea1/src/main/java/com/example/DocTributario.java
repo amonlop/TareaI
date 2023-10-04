@@ -1,4 +1,6 @@
-package main.java.com.example;
+package com.example;
+
+import java.util.Date;
 
 class DocTributario {
     private String numero;

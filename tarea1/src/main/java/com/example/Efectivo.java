@@ -1,12 +1,10 @@
-package main.java.com.example;
+package com.example;
 
 class Efectivo extends Pago {
     public Efectivo() {
 
     }
 
-    //completar el método
-    public float calcDevolucion() {
-        return this;
-    }
+    //completar el método, no es void, es float
+    public void calcDevolucion(){}
 }

@@ -1,4 +1,6 @@
-package main.java.com.example;
+package com.example;
+
+import java.util.Date;
 
 class Pago {
     private float monto;
