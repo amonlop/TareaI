@@ -7,6 +7,7 @@ class DocTributario {
     private String rut;
     private Date fecha;
     private Direccion direccion;
+    private OrdenCompra OrdenCompra;
 
     public DocTributario(String numero, String rut, Date fecha) {
         this.numero = numero;
