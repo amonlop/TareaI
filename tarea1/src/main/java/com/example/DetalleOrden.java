@@ -10,19 +10,19 @@ class DetalleOrden {
         return "articulo: "+this.articulo.getNombre() +", cantidad: "+this.cantidad;
     }
     public float calcPrecio() {
-        return 1f; //no es este resultado, es solo pa q no marque error
+        return (articulo.getPrecio()*1.19f*cantidad);
     }
 
     public float calcPrecioSinIVA() {
-        return 1f;
+        return articulo.getPrecio()*cantidad;
     }
 
     public float calcIVA() {
-        return 1f;
+        return articulo.getPrecio()*0.19f;
     }
 
     public float calcPeso() {
-        return 1f;
+        return articulo.getPeso()*cantidad;
     }
 
     public void setCantidad(int cantidad) {
@@ -32,5 +32,4 @@ class DetalleOrden {
     public int getCantidad() {
         return cantidad;
     }
-
 }
