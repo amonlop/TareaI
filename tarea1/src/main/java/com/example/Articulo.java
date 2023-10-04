@@ -1,3 +1,5 @@
+package com.example;
+
 import java.util.ArrayList;
 
 class Articulo {
@@ -6,6 +8,7 @@ class Articulo {
     private String descripcion;
     private float precio;
     private ArrayList<DetalleOrden> DetalleOrden;
+
     public Articulo(float peso, String nombre, String descripcion, float precio) {
         this.peso = peso;
         this.nombre = nombre;
