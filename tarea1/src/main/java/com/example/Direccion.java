@@ -1,6 +1,8 @@
-public class Direccion {
+package com.example;
+
+class Direccion {
     private String Direccion;
-    public void Direccion (String A){
+    public Direccion (String A){
         Direccion=A;
     }
     public String getDIR() {
@@ -9,7 +11,7 @@ public class Direccion {
     public void setDIR (String A) {
         this.Direccion=A;
     }
-    public String  toString () {
+    public String toString () {
         return "direccion: " +this.Direccion;
     }
 
