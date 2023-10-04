@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 class OrdenCompra {
-    private ArrayList<OrdenCompra> OrdenCompra;
+    private ArrayList<DetalleOrden> detalleOrdenes;
     private ArrayList<Pago> pagos;
     private DocTributario docTributario;
     private Cliente cliente;
