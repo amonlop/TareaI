@@ -5,7 +5,6 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         //doctributario
-        DocTributario documentos = new DocTributario("+5695566622","111111-k",new Date());
         // Crear 5 productos diferentes
         Articulo producto1 = new Articulo(1.0f, "Producto 1", "Descripción 1", 10.0f);
         Articulo producto2 = new Articulo(0.5f, "Producto 2", "Descripción 2", 15.0f);
@@ -31,16 +30,16 @@ public class Main {
         ArrayList<DetalleOrden> detallesOrden1 = new ArrayList<>();
         detallesOrden1.add(new DetalleOrden(producto1, 2));
         detallesOrden1.add(new DetalleOrden(producto2, 3));
-        OrdenCompra orden1 = new OrdenCompra(new Date(), "Pendiente", detallesOrden1, doc1,documentos);
+        OrdenCompra orden1 = new OrdenCompra(new Date(), "Pendiente", detallesOrden1, doc1);
 
         ArrayList<DetalleOrden> detallesOrden2 = new ArrayList<>();
         detallesOrden2.add(new DetalleOrden(producto3, 1));
         detallesOrden2.add(new DetalleOrden(producto4, 4));
-        OrdenCompra orden2 = new OrdenCompra(new Date(), "En proceso", detallesOrden2, doc2,documentos);
+        OrdenCompra orden2 = new OrdenCompra(new Date(), "En proceso", detallesOrden2, doc2);
 
         ArrayList<DetalleOrden> detallesOrden3 = new ArrayList<>();
         detallesOrden3.add(new DetalleOrden(producto5, 5));
-        OrdenCompra orden3 = new OrdenCompra(new Date(), "Entregada", detallesOrden3, doc3,documentos);
+        OrdenCompra orden3 = new OrdenCompra(new Date(), "Entregada", detallesOrden3, doc3);
 
         // Asociar órdenes de compra a compradores
         comprador1.getOrdenesCompra().add(orden1);
