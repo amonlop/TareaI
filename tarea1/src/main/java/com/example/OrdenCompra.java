@@ -19,6 +19,9 @@ class OrdenCompra {
         this.docTributario = docTributario;
     }
 
+    public String toString() {
+        return "Cliente: " + this.cliente.getNombre() + ", fecha: " + this.fecha.toString() + ", estado: " + this.estado + ", Documento tributario: " + this.docTributario.getNumero();
+    }
     public Date getFecha() {
         return fecha;
     }

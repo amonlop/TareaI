@@ -8,10 +8,11 @@ class Cliente {
     private Direccion direccion;
     private ArrayList<OrdenCompra> ordenesCompra;
 
-    public Cliente(String rut, String nombre) {
+    public Cliente(String rut, String nombre, Direccion direccion) {
         this.rut = rut;
         this.nombre = nombre;
         this.ordenesCompra = new ArrayList<>();
+        this.direccion = direccion;
     }
     public ArrayList<OrdenCompra> getOrdenesCompra() {
         return ordenesCompra;
@@ -30,5 +31,9 @@ class Cliente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String tostring(){
+        return "Nombre: "+this.nombre +", rut: "+this.rut + ", dirección: " + this.direccion.getDIR();
     }
 }

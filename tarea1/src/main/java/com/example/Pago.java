@@ -10,6 +10,10 @@ abstract class Pago {
         this.monto = monto;
         this.fecha = fecha;
     }
+
+    public String toString() {
+        return "Monto: " + this.monto + ", fecha" + this.fecha.toString();
+    }
     
     public float getMonto() {
         return monto;

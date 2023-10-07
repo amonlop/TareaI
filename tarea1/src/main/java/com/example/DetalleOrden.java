@@ -7,7 +7,7 @@ class DetalleOrden {
         this.articulo=articulo;
     }
     public String tostring(){
-        return "articulo: "+this.articulo.getNombre() +", cantidad: "+this.cantidad;
+        return "Artículo: "+this.articulo.getNombre() +", cantidad: "+this.cantidad;
     }
     public float calcPrecio() {
         return (articulo.getPrecio()*1.19f*cantidad);

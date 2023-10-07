@@ -10,25 +10,35 @@ public class Main {
         Articulo producto3 = new Articulo(2.0f, "Producto 3", "Descripción 3", 20.0f);
         Articulo producto4 = new Articulo(0.3f, "Producto 4", "Descripción 4", 8.0f);
         Articulo producto5 = new Articulo(1.5f, "Producto 5", "Descripción 5", 12.0f);
+
+        Direccion d1 = new Direccion("Los angeles 2022");
+        Direccion d2 = new Direccion("Calle melipas 3221");
+        Direccion d3 = new Direccion("Calle sin nombre 455");
+        Direccion d4 = new Direccion("Calle los héroes 42355");
+
  
         // Crear 2 compradores
-        Cliente comprador1 = new Cliente("11111111-1", "Comprador 1");
-        Cliente comprador2 = new Cliente("22222222-2", "Comprador 2");
+        Cliente comprador1 = new Cliente("11111111-1", "Comprador 1", d1);
+        Cliente comprador2 = new Cliente("22222222-2", "Comprador 2",d2);
+
+        DocTributario doc1 = new Factura("222333", "11111113-1", new Date(), d3);
+        DocTributario doc2 = new Factura("11122", "12123213-1", new Date(), d4);
+        DocTributario doc3 = new Factura("123232", "7777778-1", new Date(), d4);
 
         // Crear 3 órdenes de venta
         ArrayList<DetalleOrden> detallesOrden1 = new ArrayList<>();
         detallesOrden1.add(new DetalleOrden(producto1, 2));
         detallesOrden1.add(new DetalleOrden(producto2, 3));
-        OrdenCompra orden1 = new OrdenCompra(new Date(), "Pendiente", detallesOrden1);
+        OrdenCompra orden1 = new OrdenCompra(new Date(), "Pendiente", detallesOrden1, doc1);
 
         ArrayList<DetalleOrden> detallesOrden2 = new ArrayList<>();
         detallesOrden2.add(new DetalleOrden(producto3, 1));
         detallesOrden2.add(new DetalleOrden(producto4, 4));
-        OrdenCompra orden2 = new OrdenCompra(new Date(), "En proceso", detallesOrden2);
+        OrdenCompra orden2 = new OrdenCompra(new Date(), "En proceso", detallesOrden2, doc2);
 
         ArrayList<DetalleOrden> detallesOrden3 = new ArrayList<>();
         detallesOrden3.add(new DetalleOrden(producto5, 5));
-        OrdenCompra orden3 = new OrdenCompra(new Date(), "Entregada", detallesOrden3);
+        OrdenCompra orden3 = new OrdenCompra(new Date(), "Entregada", detallesOrden3, doc3);
 
         // Asociar órdenes de compra a compradores
         comprador1.getOrdenesCompra().add(orden1);

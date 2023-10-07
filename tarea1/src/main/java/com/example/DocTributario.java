@@ -9,10 +9,11 @@ abstract class DocTributario {
     private Direccion direccion;
     private OrdenCompra OrdenCompra;
 
-    public DocTributario(String numero, String rut, Date fecha) {
+    public DocTributario(String numero, String rut, Date fecha, Direccion direccion) {
         this.numero = numero;
         this.rut = rut;
         this.fecha = fecha;
+        this.direccion = direccion;
     }
 
     public String getNumero() {
@@ -37,6 +38,10 @@ abstract class DocTributario {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public String tostring(){
+        return "Número: "+this.numero +", rut: "+this.rut + ", fecha: " + this.fecha.toString() + ", dirección: " + this.direccion.getDIR();
     }
 
 }

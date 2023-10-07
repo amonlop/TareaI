@@ -18,7 +18,7 @@ class Articulo {
         this.peso = peso;
     }
     public String tostring(){
-        return "articulo: "+this.nombre +", precio: "+this.precio;
+        return "Artículo: "+this.nombre +", precio: "+this.precio;
     }
 
     public float getPeso() {

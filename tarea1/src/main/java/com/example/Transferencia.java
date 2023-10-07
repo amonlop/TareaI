@@ -10,6 +10,10 @@ class Transferencia extends Pago {
         super(monto, fecha);
     }
 
+    public String toString() {
+        return "Banco: " + this.banco + ", Número de cuenta: " + this.numCuenta;
+    }
+
     public String getBanco() {
         return banco;
     }

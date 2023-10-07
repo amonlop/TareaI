@@ -15,7 +15,7 @@ class Direccion {
         this.Direccion=A;
     }
     public String toString () {
-        return "direccion: " +this.Direccion;
+        return "Dirección: " +this.Direccion;
     }
 
 }

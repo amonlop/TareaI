@@ -10,6 +10,10 @@ class Tarjeta extends Pago {
         super(monto, fecha);
     }
 
+    public String toString() {
+        return "Tipo: " + this.tipo + ", Número de transacción: " + this.numTransaccion;
+    }
+
     public String getTipo() {
         return tipo;
     }
