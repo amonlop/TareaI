@@ -15,12 +15,16 @@ class OrdenCompra {
         this.fecha = fecha;
         this.estado = estado;
         this.detalleOrdenes=detalleOrdenes;
+        this.pagos = new ArrayList<>();
     }
 
     public Date getFecha() {
         return fecha;
     }
-
+    public ArrayList<Pago> getPagos() {
+        return pagos;
+    }
+    
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }

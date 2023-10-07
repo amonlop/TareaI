@@ -11,8 +11,11 @@ class Cliente {
     public Cliente(String rut, String nombre) {
         this.rut = rut;
         this.nombre = nombre;
+        this.ordenesCompra = new ArrayList<>();
     }
-
+    public ArrayList<OrdenCompra> getOrdenesCompra() {
+        return ordenesCompra;
+    }
     public String getRut() {
         return rut;
     }
