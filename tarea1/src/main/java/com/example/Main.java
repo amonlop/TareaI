@@ -2,6 +2,8 @@ package com.example;
 import java.util.ArrayList;
 import java.util.Date;
 
+//INTEGRANTES: DIEGO IGNACIO PEREZ TORRES, ANTONIA RENATA MONTERO LOPEZ
+
 public class Main {
     public static void main(String[] args) {
         //doctributario
