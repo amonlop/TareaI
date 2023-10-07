@@ -7,7 +7,6 @@ class Articulo {
     private String nombre;
     private String descripcion;
     private float precio;
-    private ArrayList<DetalleOrden> DetalleOrden;
 
     public Articulo(float peso, String nombre, String descripcion, float precio) {
         this.peso = peso;

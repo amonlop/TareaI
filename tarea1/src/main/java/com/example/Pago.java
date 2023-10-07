@@ -2,8 +2,7 @@ package com.example;
 
 import java.util.Date;
 
-class Pago {
-    private OrdenCompra ordenCompra;
+abstract class Pago {
     private float monto;
     private Date fecha;
 

@@ -2,7 +2,7 @@ package com.example;
 
 import java.util.Date;
 
-class DocTributario {
+abstract class DocTributario {
     private String numero;
     private String rut;
     private Date fecha;
