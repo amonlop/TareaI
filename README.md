@@ -1,2 +1,2 @@
 # TareaI
-Tarea I programación II 
+Tarea I programación II, integrantes: DIEGO IGNACIO PEREZ TORRES, ANTONIA RENATA MONTERO LOPEZ
