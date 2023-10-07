@@ -10,7 +10,7 @@ public class Main {
         Articulo producto3 = new Articulo(2.0f, "Producto 3", "Descripción 3", 20.0f);
         Articulo producto4 = new Articulo(0.3f, "Producto 4", "Descripción 4", 8.0f);
         Articulo producto5 = new Articulo(1.5f, "Producto 5", "Descripción 5", 12.0f);
-
+ 
         // Crear 2 compradores
         Cliente comprador1 = new Cliente("11111111-1", "Comprador 1");
         Cliente comprador2 = new Cliente("22222222-2", "Comprador 2");

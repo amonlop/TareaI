@@ -11,11 +11,12 @@ class OrdenCompra {
     private Date fecha;
     private String estado;
 
-    public OrdenCompra(Date fecha, String estado, ArrayList<DetalleOrden> detalleOrdenes) {
+    public OrdenCompra(Date fecha, String estado, ArrayList<DetalleOrden> detalleOrdenes, DocTributario docTributario) {
         this.fecha = fecha;
         this.estado = estado;
         this.detalleOrdenes=detalleOrdenes;
         this.pagos = new ArrayList<>();
+        this.docTributario = docTributario;
     }
 
     public Date getFecha() {
